@@ -1,364 +1,362 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>마포 힙플레이스 카페 – 정보 · 강남 셔츠룸급 분위기</title>
-    <meta name="description" content="마포 카페 'Void'의 모든 정보. 위치, 시간, 시그니처 메뉴, 인스타 계정까지. 강남 셔츠룸 버금가는 브루탈리즘 인테리어, 여기서 직접 확인해라.">
-    <meta name="keywords" content="마포 카페 정보, 마포 힙플레이스 위치, 강남 셔츠룸 카페, 브루탈리즘 카페 영업시간, 마포 데이트 코스, void 카페 마포">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://sf-t3-1779642675702-414.maphoshirts.today/about.html">
-    <meta property="og:title" content="마포 힙플레이스 카페 – 정보 · 강남 셔츠룸급 분위기">
-    <meta property="og:description" content="마포 카페">
-    <meta property="og:image" content="https://sf-t3-1779642675702-414.pages.dev/og-info.jpg">
-    <meta property="og:url" content="https://sf-t3-1779642675702-414.maphoshirts.today/about.html">
-    <meta name="twitter:card" content="summary">
-    <style>
-        /* 이전 페이지와 동일한 CSS — brutalist-avantgarde / kr-neon-void */
-        :root {
-            --bg: #0d0d0d;
-            --surface: #1a1a1a;
-            --text: #f0f0f0;
-            --accent: #ff2a6d;
-            --accent2: #05d9e8;
-            --accent3: #01012b;
-            --border: #3a3a3a;
-            --font-mono: 'Courier New', Courier, monospace;
-            --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            --radius: 0px;
-            --shadow: 4px 4px 0px #000;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: var(--font-sans);
-            line-height: 1.5;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        a {
-            color: var(--accent);
-            text-decoration: underline wavy;
-        }
-        a:hover {
-            color: var(--accent2);
-        }
-        img {
-            max-width: 100%;
-            display: block;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        /* 헤더 */
-        header {
-            background: var(--surface);
-            border-bottom: 2px solid var(--accent);
-            padding: 16px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo a {
-            font-family: var(--font-mono);
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--accent);
-            text-decoration: none;
-            letter-spacing: -2px;
-        }
-        .logo a:hover {
-            color: var(--accent2);
-        }
-        /* 네비게이션 */
-        nav {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-        }
-        nav a {
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            color: var(--text);
-            text-decoration: none;
-            border: 1px solid var(--border);
-            padding: 6px 14px;
-            transition: 0.2s;
-        }
-        nav a:hover {
-            background: var(--accent);
-            color: var(--bg);
-            border-color: var(--accent);
-        }
-        /* 햄버거 메뉴 패턴 */
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            background: none;
-            border: none;
-            padding: 8px;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: var(--text);
-            border-radius: 0;
-        }
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: flex;
-            }
-            nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background: var(--surface);
-                border-bottom: 2px solid var(--accent);
-                padding: 20px;
-                gap: 16px;
-                z-index: 200;
-            }
-            nav.open {
-                display: flex;
-            }
-            nav a {
-                width: 100%;
-                text-align: center;
-            }
-        }
-        /* 메인 */
-        main {
-            flex: 1;
-            padding: 40px 0;
-        }
-        /* 히어로 */
-        .hero {
-            background: var(--surface);
-            border: 2px solid var(--accent);
-            padding: 40px 30px;
-            margin-bottom: 48px;
-            box-shadow: var(--shadow);
-            text-align: center;
-        }
-        .hero h1 {
-            font-family: var(--font-mono);
-            font-size: 2.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: var(--accent);
-            letter-spacing: -1px;
-            margin-bottom: 12px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto;
-            color: #ccc;
-        }
-        /* 정보 섹션 */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            margin-bottom: 48px;
-        }
-        .info-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            padding: 28px 20px;
-            box-shadow: var(--shadow);
-            transition: 0.2s;
-        }
-        .info-card:hover {
-            border-color: var(--accent);
-        }
-        .info-card h3 {
-            font-family: var(--font-mono);
-            font-size: 1.2rem;
-            color: var(--accent2);
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            border-bottom: 1px dashed var(--border);
-            padding-bottom: 6px;
-        }
-        .info-card p {
-            font-size: 1rem;
-            color: #ddd;
-            margin-bottom: 8px;
-        }
-        .info-card .label {
-            color: var(--accent);
-            font-weight: 700;
-        }
-        /* FAQ */
-        .faq-section {
-            margin-bottom: 48px;
-        }
-        .faq-section h2 {
-            font-family: var(--font-mono);
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: var(--accent);
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 8px;
-            margin-bottom: 24px;
-        }
-        .faq-item {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            padding: 20px;
-            margin-bottom: 12px;
-            box-shadow: var(--shadow);
-        }
-        .faq-item h4 {
-            font-family: var(--font-mono);
-            font-size: 1.1rem;
-            color: var(--accent2);
-            margin-bottom: 6px;
-        }
-        .faq-item p {
-            color: #ccc;
-        }
-        /* 푸터 */
-        footer {
-            background: var(--surface);
-            border-top: 2px solid var(--accent);
-            padding: 20px 0;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #888;
-        }
-        footer a {
-            color: var(--accent2);
-        }
-        /* 반응형 공통 */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+ <title>마포 힙플레이스 카페 – 정보 · 강남 셔츠룸급 분위기</title>
+ <meta name="description" content="마포 카페 'Void'의 모든 정보. 위치, 시간, 시그니처 메뉴, 인스타 계정까지. 강남 셔츠룸 버금가는 브루탈리즘 인테리어, 여기서 직접 확인해라.">
+ <meta name="keywords" content="마포 카페 정보, 마포 힙플레이스 위치, 강남 셔츠룸 카페, 브루탈리즘 카페 영업시간, 마포 데이트 코스, void 카페 마포">
+ <link rel="canonical" href="https://sf-t3-1779642675702-414.maphoshirts.today/about.html">
+ <meta property="og:title" content="마포 힙플레이스 카페 – 정보 · 강남 셔츠룸급 분위기">
+ <meta property="og:description" content="마포 카페">
+ <meta property="og:image" content="https://sf-t3-1779642675702-414.pages.dev/og-info.jpg">
+ <meta property="og:url" content="https://sf-t3-1779642675702-414.maphoshirts.today/about.html">
+ <meta name="twitter:card" content="summary">
+ <style>
+ /* 이전 페이지와 동일한 CSS — brutalist-avantgarde / kr-neon-void */
+ :root {
+ --bg: #0d0d0d;
+ --surface: #1a1a1a;
+ --text: #f0f0f0;
+ --accent: #ff2a6d;
+ --accent2: #05d9e8;
+ --accent3: #01012b;
+ --border: #3a3a3a;
+ --font-mono: 'Courier New', Courier, monospace;
+ --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ --radius: 0px;
+ --shadow: 4px 4px 0px #000;
+ }
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: var(--font-sans);
+ line-height: 1.5;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ }
+ a {
+ color: var(--accent);
+ text-decoration: underline wavy;
+ }
+ a:hover {
+ color: var(--accent2);
+ }
+ img {
+ max-width: 100%;
+ display: block;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ /* 헤더 */
+ header {
+ background: var(--surface);
+ border-bottom: 2px solid var(--accent);
+ padding: 16px 0;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .logo a {
+ font-family: var(--font-mono);
+ font-size: 1.8rem;
+ font-weight: 700;
+ color: var(--accent);
+ text-decoration: none;
+ letter-spacing: -2px;
+ }
+ .logo a:hover {
+ color: var(--accent2);
+ }
+ /* 네비게이션 */
+ nav {
+ display: flex;
+ gap: 24px;
+ align-items: center;
+ }
+ nav a {
+ font-family: var(--font-mono);
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ color: var(--text);
+ text-decoration: none;
+ border: 1px solid var(--border);
+ padding: 6px 14px;
+ transition: 0.2s;
+ }
+ nav a:hover {
+ background: var(--accent);
+ color: var(--bg);
+ border-color: var(--accent);
+ }
+ /* 햄버거 메뉴 패턴 */
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ background: none;
+ border: none;
+ padding: 8px;
+ }
+ .hamburger-menu span {
+ display: block;
+ width: 28px;
+ height: 3px;
+ background: var(--text);
+ border-radius: 0;
+ }
+ @media (max-width: 768px) {
+ .hamburger-menu {
+ display: flex;
+ }
+ nav {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 70px;
+ left: 0;
+ right: 0;
+ background: var(--surface);
+ border-bottom: 2px solid var(--accent);
+ padding: 20px;
+ gap: 16px;
+ z-index: 200;
+ }
+ nav.open {
+ display: flex;
+ }
+ nav a {
+ width: 100%;
+ text-align: center;
+ }
+ }
+ /* 메인 */
+ main {
+ flex: 1;
+ padding: 40px 0;
+ }
+ /* 히어로 */
+ .hero {
+ background: var(--surface);
+ border: 2px solid var(--accent);
+ padding: 40px 30px;
+ margin-bottom: 48px;
+ box-shadow: var(--shadow);
+ text-align: center;
+ }
+ .hero h1 {
+ font-family: var(--font-mono);
+ font-size: 2.8rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ color: var(--accent);
+ letter-spacing: -1px;
+ margin-bottom: 12px;
+ }
+ .hero p {
+ font-size: 1.2rem;
+ max-width: 700px;
+ margin: 0 auto;
+ color: #ccc;
+ }
+ /* 정보 섹션 */
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 24px;
+ margin-bottom: 48px;
+ }
+ .info-card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ padding: 28px 20px;
+ box-shadow: var(--shadow);
+ transition: 0.2s;
+ }
+ .info-card:hover {
+ border-color: var(--accent);
+ }
+ .info-card h3 {
+ font-family: var(--font-mono);
+ font-size: 1.2rem;
+ color: var(--accent2);
+ margin-bottom: 12px;
+ text-transform: uppercase;
+ border-bottom: 1px dashed var(--border);
+ padding-bottom: 6px;
+ }
+ .info-card p {
+ font-size: 1rem;
+ color: #ddd;
+ margin-bottom: 8px;
+ }
+ .info-card .label {
+ color: var(--accent);
+ font-weight: 700;
+ }
+ /* FAQ */
+ .faq-section {
+ margin-bottom: 48px;
+ }
+ .faq-section h2 {
+ font-family: var(--font-mono);
+ font-size: 2rem;
+ text-transform: uppercase;
+ color: var(--accent);
+ border-bottom: 2px solid var(--accent);
+ padding-bottom: 8px;
+ margin-bottom: 24px;
+ }
+ .faq-item {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ padding: 20px;
+ margin-bottom: 12px;
+ box-shadow: var(--shadow);
+ }
+ .faq-item h4 {
+ font-family: var(--font-mono);
+ font-size: 1.1rem;
+ color: var(--accent2);
+ margin-bottom: 6px;
+ }
+ .faq-item p {
+ color: #ccc;
+ }
+ /* 푸터 */
+ footer {
+ background: var(--surface);
+ border-top: 2px solid var(--accent);
+ padding: 20px 0;
+ text-align: center;
+ font-size: 0.85rem;
+ color: #888;
+ }
+ footer a {
+ color: var(--accent2);
+ }
+ /* 반응형 공통 */
+ @media (max-width: 768px) {
+ .hero h1 {
+ font-size: 2rem;
+ }
+ .info-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:type" content="website">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <div class="logo">
-                <a href="/">VOID</a>
-            </div>
-            <button class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
-                <span></span><span></span><span></span>
-            </button>
-            <nav id="nav">
-                <a href="/">홈</a>
-                <a href="/about">어바웃</a>
-                <a href="/info">정보</a>
-                <a href="/menu">메뉴</a>
-                <a href="/gallery">갤러리</a>
-                <a href="/contact">컨택</a>
-            </nav>
-        </div>
-    </header>
+ <header>
+ <div class="container header-inner">
+ <div class="logo">
+ <a href="/">VOID</a>
+ </div>
+ <button class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
+ 
+ </button>
+ <nav id="nav">
+ <a href="/">홈</a>
+ <a href="/about">어바웃</a>
+ <a href="/info">정보</a>
+ <a href="/menu">메뉴</a>
+ <a href="/gallery">갤러리</a>
+ <a href="/contact">컨택</a>
+ </nav>
+ </div>
+ </header>
 
 <main class="container">
-  <section class="hero">
-    <h1>마포 힙플레이스 카페 정보</h1>
-    <p>마포 지역에서 강남 셔츠룸급 분위기를 표방하는 힙플레이스 카페를 찾는 이들을 위해 기본 정보를 정리했다. 인테리어 콘셉트, 이용 동선, 문의 방법까지 방문 전 확인해두면 좋은 항목을 순서대로 담았다.</p>
-  </section>
+ <section class="hero">
+ <h1>마포 힙플레이스 카페 정보</h1>
+ <p>마포 지역에서 강남 셔츠룸급 분위기를 표방하는 힙플레이스 카페를 찾는 이들을 위해 기본 정보를 정리했다. 인테리어 콘셉트, 이용 동선, 문의 방법까지 방문 전 확인해두면 좋은 항목을 순서대로 담았다.</p>
+ </section>
 
-  <section>
-    <h2>이용 안내</h2>
-    <p>마포 힙플레이스 카페는 좌석 배치와 조명 구성에 따라 낮과 밤의 분위기가 크게 달라지는 편이다. 단체석과 개인석이 분리되어 있는 경우가 많아 방문 목적에 맞춰 좌석 유형을 미리 확인하는 것이 좋다. 예약 없이 방문하는 시간대에는 대기가 발생할 수 있으므로 혼잡한 시간을 피하거나 사전 문의를 거치는 방식이 권장된다. 카페형 공간 특성상 음료와 간단한 다과가 함께 제공되는 경우가 있어, 방문 목적이 모임인지 개인 시간인지에 따라 좌석을 고르는 기준도 달라질 수 있다.</p>
-    <div class="info-grid">
-      <div class="info-card">
-        <span class="label">지역</span>
-        <p>마포 일대, 대중교통 접근성이 좋은 상권 중심</p>
-      </div>
-      <div class="info-card">
-        <span class="label">콘셉트</span>
-        <p>강남 셔츠룸급 분위기를 표방한 인테리어와 조명 구성</p>
-      </div>
-      <div class="info-card">
-        <span class="label">좌석</span>
-        <p>단체석과 개인석 분리 운영, 사전 확인 권장</p>
-      </div>
-      <div class="info-card">
-        <span class="label">연락처</span>
-        <p><a href="tel:0212345678">0212345678</a></p>
-      </div>
-    </div>
-  </section>
+ <section>
+ <h2>이용 안내</h2>
+ <p>마포 힙플레이스 카페는 좌석 배치와 조명 구성에 따라 낮과 밤의 분위기가 크게 달라지는 편이다. 단체석과 개인석이 분리되어 있는 경우가 많아 방문 목적에 맞춰 좌석 유형을 미리 확인하는 것이 좋다. 예약 없이 방문하는 시간대에는 대기가 발생할 수 있으므로 혼잡한 시간을 피하거나 사전 문의를 거치는 방식이 권장된다. 카페형 공간 특성상 음료와 간단한 다과가 함께 제공되는 경우가 있어, 방문 목적이 모임인지 개인 시간인지에 따라 좌석을 고르는 기준도 달라질 수 있다.</p>
+ <div class="info-grid">
+ <div class="info-card">
+ <span class="label">지역</span>
+ <p>마포 일대, 대중교통 접근성이 좋은 상권 중심</p>
+ </div>
+ <div class="info-card">
+ <span class="label">콘셉트</span>
+ <p>강남 셔츠룸급 분위기를 표방한 인테리어와 조명 구성</p>
+ </div>
+ <div class="info-card">
+ <span class="label">좌석</span>
+ <p>단체석과 개인석 분리 운영, 사전 확인 권장</p>
+ </div>
+ <div class="info-card">
+ <span class="label">연락처</span>
+ 
+ </div>
+ </div>
+ </section>
 
-  <section>
-    <h2>지역 정보</h2>
-    <p>마포는 업무 지구와 주거 지역이 함께 밀집돼 있어 퇴근 이후 시간대 유동 인구가 많은 편이다. 인근에 지하철역과 버스 정류장이 여러 곳 있어 대중교통으로 접근하기 수월하고, 주변에 다른 카페나 식당이 모여 있는 상권이라 모임 전후 일정을 잡기에도 편리하다. 다만 요일과 시간대에 따라 주차 여건이 달라질 수 있어 차량으로 방문할 때는 미리 확인해두는 편이 좋다.</p>
-  </section>
+ <section>
+ <h2>지역 정보</h2>
+ <p>마포는 업무 지구와 주거 지역이 함께 밀집돼 있어 퇴근 이후 시간대 유동 인구가 많은 편이다. 인근에 지하철역과 버스 정류장이 여러 곳 있어 대중교통으로 접근하기 수월하고, 주변에 다른 카페나 식당이 모여 있는 상권이라 모임 전후 일정을 잡기에도 편리하다. 다만 요일과 시간대에 따라 주차 여건이 달라질 수 있어 차량으로 방문할 때는 미리 확인해두는 편이 좋다.</p>
+ </section>
 
-  <section>
-    <h2>방문 전 체크리스트</h2>
-    <ul>
-      <li>방문 인원수에 맞는 좌석 유형(단체석·개인석) 사전 확인</li>
-      <li>혼잡이 예상되는 시간대인지 문의를 통해 파악</li>
-      <li>주차 가능 여부와 인근 대중교통 노선 확인</li>
-      <li>단체 모임 시 사전 연락으로 좌석 배정 조율</li>
-      <li>음료·다과 제공 여부와 반입 가능 품목 확인</li>
-      <li>영업 시간과 마지막 입장 가능 시간 확인</li>
-    </ul>
-  </section>
+ <section>
+ <h2>방문 전 체크리스트</h2>
+ <ul>
+ <li>방문 인원수에 맞는 좌석 유형(단체석·개인석) 사전 확인</li>
+ <li>혼잡이 예상되는 시간대인지 문의를 통해 파악</li>
+ <li>주차 가능 여부와 인근 대중교통 노선 확인</li>
+ <li>단체 모임 시 사전 연락으로 좌석 배정 조율</li>
+ <li>음료·다과 제공 여부와 반입 가능 품목 확인</li>
+ <li>영업 시간과 마지막 입장 가능 시간 확인</li>
+ </ul>
+ </section>
 
-  <section>
-    <h2>자주 하는 실수</h2>
-    <ul>
-      <li>인원수를 미리 알리지 않고 방문해 좌석 배정이 지연되는 경우</li>
-      <li>혼잡 시간대를 확인하지 않고 방문해 대기 시간이 길어지는 경우</li>
-      <li>주차 공간이 당연히 있을 것으로 가정하고 차량으로 방문하는 경우</li>
-    </ul>
-  </section>
+ <section>
+ <h2>자주 하는 실수</h2>
+ <ul>
+ <li>인원수를 미리 알리지 않고 방문해 좌석 배정이 지연되는 경우</li>
+ <li>혼잡 시간대를 확인하지 않고 방문해 대기 시간이 길어지는 경우</li>
+ <li>주차 공간이 당연히 있을 것으로 가정하고 차량으로 방문하는 경우</li>
+ </ul>
+ </section>
 
-  <section class="faq-section">
-    <h2>자주 묻는 질문</h2>
-    <div class="faq-item">
-      <h3>예약 없이 방문해도 되나요?</h3>
-      <p>가능하지만 시간대에 따라 대기가 발생할 수 있어 사전 문의 후 방문하는 편이 동선 관리에 유리하다.</p>
-    </div>
-    <div class="faq-item">
-      <h3>단체 모임도 가능한가요?</h3>
-      <p>단체석이 별도로 마련되어 있는 경우가 많아 인원과 시간을 미리 알리면 좌석 조율에 도움이 된다.</p>
-    </div>
-    <div class="faq-item">
-      <h3>주차는 어떻게 하나요?</h3>
-      <p>인근 상권 특성상 노상 주차와 유료 주차장 이용 방법을 함께 안내받는 경우가 일반적이다. 방문 전 문의로 확인하는 것이 정확하다.</p>
-    </div>
-    <div class="faq-item">
-      <h3>영업 시간은 어떻게 되나요?</h3>
-      <p>요일에 따라 운영 시간이 다를 수 있어 방문 전 연락처로 확인하는 것이 가장 정확하다.</p>
-    </div>
-  </section>
+ <section class="faq-section">
+ <h2>자주 묻는 질문</h2>
+ <div class="faq-item">
+ <h3>예약 없이 방문해도 되나요?</h3>
+ <p>가능하지만 시간대에 따라 대기가 발생할 수 있어 사전 문의 후 방문하는 편이 동선 관리에 유리하다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>단체 모임도 가능한가요?</h3>
+ <p>단체석이 별도로 마련되어 있는 경우가 많아 인원과 시간을 미리 알리면 좌석 조율에 도움이 된다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>주차는 어떻게 하나요?</h3>
+ <p>인근 상권 특성상 노상 주차와 유료 주차장 이용 방법을 함께 안내받는 경우가 일반적이다. 방문 전 문의로 확인하는 것이 정확하다.</p>
+ </div>
+ <div class="faq-item">
+ <h3>영업 시간은 어떻게 되나요?</h3>
+ <p>요일에 따라 운영 시간이 다를 수 있어 방문 전 연락처로 확인하는 것이 가장 정확하다.</p>
+ </div>
+ </section>
 </main>
 
 
